@@ -35,4 +35,9 @@ function setup(htmlComponent) {
         img.src = "data:image/jpeg;base64," + base64String;
         document.getElementById("resultImage").src = img.src;
     });
+
+    htmlComponent.addEventListener("numeroDeObjetos", function(event) {
+        const numeroDeObjetos = event.Data;
+        document.getElementById("numObjetos").textContent = numeroDeObjetos;
+    });
 }

@@ -1,4 +1,4 @@
-function result = identificarObjetos(imagen)
+function [result, objetos] = identificarObjetos(imagen)
 
     % Cargar la base de conocimiento generada durante el entrenamiento
     load('knowledge_base_training.mat', 'knowledgeBase');
@@ -28,6 +28,8 @@ function result = identificarObjetos(imagen)
 
     % Ponderaciones (puedes ajustar)
     w = struct('Area',0.01,'Perimeter',0.1,'Eccentricity',1,'Solidity',1,'Extent',1,'Circularity',2,'AspectRatio',1);
+
+    objetos = length(stats);
 
     for i = 1:length(stats)
         s = stats(i);
