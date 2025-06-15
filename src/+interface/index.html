@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/index.css">
+        <title>Identificacion de Piezas de Ferreteria</title>
+    </head>
+    <body>
+        <div>
+            <h1>Identificacion de Piezas de Ferreteria</h1>
+            <p>Esta aplicacion permite identificar las siguientes piezas de ferreteria:</p>
+            <ul class="lista">
+                <li>
+                    <div>
+                        <img src="./img/tornillo.jpg" alt="tornillo">
+                        <p>a) Tornillo</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/rondana.jpg" alt="rondana">
+                        <p>b) Rondana</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/alcayata.jpg" alt="alcayata">
+                        <p>c) Alcayata</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/armella.jpg" alt="armella">
+                        <p>d) Armella</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./img/grapa.jpg" alt="grapa">
+                        <p style="padding-bottom: 0;">e) Grapa <p style="font-size: small; padding: 0;"> cola de pato </p> </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="form">
+            <h1>Identifica las Piezas</h1>
+            <form id="form">
+                <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" required>
+                <button type="submit">Identificar</button>
+            </form>
+        </div>
+        <div class="identificacion">
+            <div>
+                <h2>Imagen original</h2>
+                <div class="image-container">
+                    <img id="originalImage" src="" alt="Imagen Original">
+                </div>
+            </div>
+            <div>
+                <h2>Resultado de la Identificacion</h2>
+                <div class="image-container">
+                    <img id="resultImage" src="" alt="Resultado de la Identificacion">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Made by Nintech</p>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
